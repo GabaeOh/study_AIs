@@ -1,4 +1,4 @@
-# 예제 [[16.34, 87.21]]
+# 예제 [[47.0,16.42,177.7]] 
 
 수술시간 = float(input('수술시간 : '))
 헤모글로빈수치 = float(input('헤모글로빈수치 : '))
@@ -16,7 +16,7 @@ if os.path.exists(file_path): # 파일 존재 여부 return True/False
         result_predict = loaded_model.predict(input_labels)
         print('Predict Age Result : {}'.format(result_predict))
         pass
-    
+
 else : 
     print('File Not exists!')
 ## Predict Age Result : [13.45096511]
