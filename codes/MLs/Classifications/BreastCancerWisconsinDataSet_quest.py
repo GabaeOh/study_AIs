@@ -14,7 +14,7 @@ file_path = 'datasets/BreastCancerWisconsinDataSet.pkl'
 if os.path.exists(file_path): # 파일 존재 여부 return True/False 
     with open ('datasets/BreastCancerWisconsinDataSet.pkl', 'rb') as regression_file : 
         loaded_model = pickle.load(regression_file)
-        input_labels = [[radius_se, area_se, area_worst]]  # 학습했던 설명변수 형식 맞게 적용 
+        input_labels = [[radius_se, area_se, area_worst]] 
         result_predict = loaded_model.predict(input_labels)
         print('Predict diagnosis Result : {}'.format(result_predict))
         pass
