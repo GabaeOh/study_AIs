@@ -6,7 +6,7 @@
 |---|---|---|---|
 | concat | [numpys_concat](./codes/numpys.py) | numpy을 이용한 concat  | np.concatenate((, ), axis=)|
 | concat | [pandas_concat](./codes/pandass.ipynb) | pandas를 이용한 concat  | pd.concat([ , ], axis=)|
-| encoder, concat | [pandas_encoder](./codes/sklearns.ipynb) | Encoding with One Hot Encoding & concat| oneHotEncoder.transform(df_[[' ']]).toarray()|
+| encoder, concat, Imbalanced Data Sampling | [pandas_encoder](./codes/sklearns.ipynb) | Encoding with One Hot Encoding & concat & Under/Over Sampling | oneHotEncoder.transform(df_[[' ']]).toarray()|
 
 ## 데이터분석
 | 제목 | 작성소스 | 설명 | 비고 |
@@ -19,7 +19,7 @@
 | 회귀분석 | [Regression](./codes/MLs/Regressions/BreastCancerWisconsin_Regression.ipynb) | 회귀분석 | |
 | 회귀분석 평가 | [Regression_evaluations](./codes/MLs/Regressions/BreastCancerWisconsin_Regression_evaluations.ipynb) | 회귀분석의 평가 |r2_score, MSE(mean_squared_error) |
 | 회귀분석 평가 | [scaling_encoding](./codes/MLs/Classifications/TitanicFromDisaster_scaling_encoding.ipynb) | Scaling & Encoding |Encoding with One Hot Encoding, Scaling - MinMaxScaler |
-| GridSearchCV | [GridSearchCV](./codes/MLs/Classifications/NSC_BND_M20_GridSearchCV.ipynb) | GridSearchCV |best_score |
+| GridSearchCV | [GridSearchCV](./codes/MLs/Classifications/NSC_BND_M20_GridSearchCV.ipynb) | GridSearchCV |평가 score, best_score |
 ## QUEST
 | 제목 | 작성소스 | 과제 설명 | 비고 |
 |---|---|---|---|
@@ -29,3 +29,4 @@
 |DecisionTreeClassifier|[목표변수의 전체데이터](./codes/MLs/Classifications/NSC_BND_M20_DecisionTreeClassifier_quest.ipynb), [목표변수의 범주 8개만](./codes/MLs/Classifications/NSC_BND_M20_DecisionTreeClassifier_quest_top8.ipynb)|DecisionTreeClassifier 전처리, 학습, 평가|---|
 |split/classification_report|[evaluation](./codes/MLs/Classifications/BreastCancerWisconsinDataSet_evaluation_quest.ipynb)|train_test_split() 적용, classification_report() 적용|---|
 |split/classification_report|[evaluation](./codes/MLs/Classifications/NSC_BND_M20_evaluation_quest.ipynb)|train_test_split() 적용, classification_report() 적용, 평가 의견 첨부|---|
+|GridSearchCV|[best_model](./codes/MLs/Classifications/RecurrenceOfSurgery_FeatureEngin_quest.ipynb)|목표변수(재발여부), 설명변수(3개), 최고 모델 찾기|---|
