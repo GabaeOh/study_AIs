@@ -20,6 +20,10 @@
 | 회귀분석 평가 | [Regression_evaluations](./codes/MLs/Regressions/BreastCancerWisconsin_Regression_evaluations.ipynb) | 회귀분석의 평가 |r2_score, MSE(mean_squared_error) |
 | 회귀분석 평가 | [scaling_encoding](./codes/MLs/Classifications/TitanicFromDisaster_scaling_encoding.ipynb) | Scaling & Encoding |Encoding with One Hot Encoding, Scaling - MinMaxScaler |
 | GridSearchCV | [GridSearchCV](./codes/MLs/Classifications/NSC_BND_M20_GridSearchCV.ipynb) | GridSearchCV |평가 score, best_score,classification_report |
+| resampling | [resampling](./codes/MLs/Classifications/recurrenceOfSurgery_MachineLearning_Normal.ipynb) | resampling |resampling(Over, Under, Combine sampling) |
+| for문_resampling | [for문_resampling](./codes/MLs/Classifications/recurrenceOfSurgery_UnderSampling.ipynb) | UnderSampling |fo문을 통한 UnderSampling과 hypertuning |
+
+
 ## QUEST
 | 제목 | 작성소스 | 과제 설명 | 비고 |
 |---|---|---|---|
