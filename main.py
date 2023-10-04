@@ -13,6 +13,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Mount the 'resources' directory as '/images' endpoint
+from fastapi.staticfiles import StaticFiles
+app.mount("/images", StaticFiles(directory="resources"), name="images") 
+# EX) http://127.0.0.1:8000/images/thermometer.png
+# <img src='http://127.0.0.1:8000/images/thermometer.png' /> # view
+# <a href='http://127.0.0.1:8000/images/thermometer.png'> thermometer.png</a> # download
+
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
@@ -21,6 +28,10 @@ import pickle
 
 # /api_v1/mlmodelwithregression with dict params
 # method : post
+# {
+#     "texture_mean": 18.5,
+#     "perimeter_mean": 102.1
+# }
 @app.post('/api_v1/mlmodelwithregression') 
 def mlmodelwithregression(data:dict) : # json
     print('data with dict {}'.format(data))
@@ -42,4 +53,3 @@ def mlmodelwithregression(data:dict) : # json
     # 예측값 리턴
     result = {'radius_mean':result_predict[0]}
     return result
-
