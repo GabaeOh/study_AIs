@@ -1,14 +1,14 @@
-## STUDY_AI
+# 📑 STUDY_AI
 ![](./images/머신러닝%20학습과정.png)
 
-## 데이터분석을 위한 기초문법
+## 💻 데이터분석을 위한 기초문법
 | 제목 | 작성소스 | 설명 | 비고 |
 |---|---|---|---|
 | concat | [numpys_concat](./codes/numpys.py) | numpy을 이용한 concat  | np.concatenate((, ), axis=)|
 | concat | [pandas_concat](./codes/pandass.ipynb) | pandas를 이용한 concat  | pd.concat([ , ], axis=)|
 | encoder, concat, Imbalanced Data Sampling | [pandas_encoder](./codes/sklearns.ipynb) | Encoding with One Hot Encoding & concat & Under/Over Sampling | oneHotEncoder.transform(df_[[' ']]).toarray()|
 
-## 데이터분석
+## 💻 데이터분석
 | 제목 | 작성소스 | 설명 | 비고 |
 |---|---|---|---|
 | 지도학습-이진분류 데이터 분석 | [TitanicFromDisaster](./codes/MLs/Classifications/TitanicFromDisaster.ipynb) | 지도학습-이진분류  |LogisticRegression |
@@ -24,7 +24,7 @@
 | for문_resampling | [for문_resampling](./codes/MLs/Classifications/recurrenceOfSurgery_UnderSampling.ipynb) | UnderSampling |fo문을 통한 UnderSampling과 hypertuning |
 
 
-## QUEST
+### 📚 QUEST
 | 제목 | 작성소스 | 과제 설명 | 비고 |
 |---|---|---|---|
 |지도학습|[QUEST](./codes/regression/NSC2_M20_quest.ipynb)| mongoDB를 통해 파일 select, 전처리, 학습, 평가, 예측 과정 진행|---|
